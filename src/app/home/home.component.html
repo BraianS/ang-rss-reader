@@ -1,0 +1,96 @@
+<!-- Hero -->
+<section class="hero is-info">
+  <div class="hero-body">
+    <div class="container is-flex is-justify-center">
+      <div class="columns">
+        <div class="column is-flex is-justify-center">
+          <img src="assets/img/logo.png" alt="" class="image is-128x128">
+        </div>
+        <div class="column ">
+          <h1 class="title is-2 has-text-centered">Ang Rss Reader</h1>
+          <h3 class="subtitle is-4 has-text-centered">Simple Rss Reader</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end / Hero -->
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <aside class="column is-6">
+        <nav class="menu">
+          <p class="menu-label">Feeds</p>
+          <!-- list of Feeds -->
+          <div class="menu-list">
+            <div class="columns is-mobile " *ngFor="let feed of feedList">
+              <a class="column is-11 " (click)="getUrlFeed(feed.url)" [ngClass]="{'is-active': urlParent === feed.url}">
+                {{feed.title}} </a>
+              <a class="column is-1" (click)="removeFeed(feed)" [ngClass]="{'has-text-danger': urlParent === feed.url}">
+                <span class="icon">
+                  <i class="fa fa-trash"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- end / list of Feeds -->
+          <p class="menu-label">Add New Feed</p>
+          <ul class="menu-list">
+            <li><a (click)="toggleForm()">
+                <span [hidden]="isFormActive">Open Form</span>
+                <span [hidden]="!isFormActive">Close Form</span>
+              </a></li>
+          </ul>
+          <!-- Form Add Feed -->
+          <form (ngSubmit)="addFeed(form)" #form="ngForm" *ngIf="isFormActive">
+            <!--  Title -->
+            <div class="field is-fullwidth">
+              <div class="control">
+                <input type="text" id="feed" class="input" [class.is-danger]="title.invalid && title.touched"
+                  placeholder="Title" [(ngModel)]="feed.title" name="title" required #title="ngModel" maxlength="40">
+              </div>
+              <div *ngIf="title.invalid && title.touched" class="is-size-6 has-text-danger">
+                Title is required
+              </div>
+              <!-- end / Title -->
+            </div>
+            <!-- Rss Url -->
+            <div class="field is-fullwidth">
+              <div class="field-body">
+                <div class="field ">
+                  <div class="field has-addons">
+                    <div class="control is-expanded">
+                      <input type="text" id="url" class="input" [class.is-danger]="url.invalid && url.touched "
+                        name="url" [(ngModel)]="feed.url" placeholder="http://rss.example.com/feed" #url="ngModel"
+                        required maxlength="120">
+                    </div>
+                    <div class="control">
+                      <button class="button is-info" [disabled]="form.invalid" type="submit">Add</button>
+                    </div>
+                  </div>
+                  <div *ngIf="url.invalid && url.touched" class="is-size-6 has-text-danger">
+                    Rss is required
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end / Rss Url -->
+          </form>
+          <!-- end / Form -->
+        </nav>
+      </aside>
+      <!-- Feed Cards -->
+      <main class="column is-6">
+        <feed-card [childUrl]="urlParent"></feed-card>
+      </main>
+      <!-- end / Feed Cards -->
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p><strong>Ang Rss Reader</strong> by <a href="https://github.com/BraianS/ang-rss-reader"> Braian Silva</a>. The
+      source code is licensed <a href="https://opensource.org/licenses/mit-license.php">MIT</a>
+    </p>
+  </div>

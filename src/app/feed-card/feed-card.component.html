@@ -1,0 +1,100 @@
+<ng-container>
+  <section>
+    <nav class="navbar is-info">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-light" (click)="removeFeedItems()">
+              <span *ngIf="feedItemList.length">{{feedItemList.length}}</span>
+              <span class="icon">
+                <i class="fas fa-check"></i>
+              </span>
+            </a>
+            <!-- update feed items -->
+            <a class="button is-primary" (click)="updateFeedItems()">
+              <span class="icon">
+                <i class="fas " [ngClass]="{'fa-sync':!isLoadingActive,'fa-spinner fa-spin':isLoadingActive}"></i>
+              </span>
+            </a>
+            <!-- end / update feed items -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="box" *ngIf="feedItemList.length">
+      <!-- list of feed items -->
+      <article class="media" *ngFor="let item of feedItemList">
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>{{item.author}}</strong> <small> · {{item.pubDate | date:'dd-MM-yyyy'}}</small>
+              <br>
+              <strong>{{item.title}}</strong>
+              <br>
+              <br>
+              <a class="button is-link is-outlined" (click)="toggleModal(item)">Saiba mais</a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <!-- end / list of feed items -->
+    </div>
+    <!-- remove all feed items -->
+    <div class="buttons" *ngIf="feedItemList.length">
+      <button type="button" class="button is-fullwidth is-danger" (click)="removeFeedItems()">
+        <span class="icon">
+          <i class="fa fa-trash"> Delete All</i>
+        </span>
+      </button>
+    </div>
+    <!-- end / remove all feed items -->
+  </section>
+  <div class="hero has-text-centered" *ngIf="isAboutActive">
+    <div class="hero-body">
+      <div class="container">
+        <p><span class="icon">
+            <i class="fas fa-hourglass-half"></i>
+          </span> Store your feed items for 30 days, remove all feeds if you update after expiration.</p>
+        <p><span class="icon">
+            <i class="fas fa-save"></i>
+          </span> Your feeds are saved locally.</p>
+          <p><span class="icon">
+            <i class="fas fa-code-branch"></i>
+          </span> <a href="https://github.com/BraianS/ang-feeds">Fork this project, you're welcome to help.</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- info about feeds -->
+  <div class="hero has-text-centered" *ngIf="!feedItemList.length && !isAboutActive">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          <div class="icon">
+            <i class="fas fa-rss"></i>
+          </div>
+          All done
+        </h1>
+        <h2 class="subtitle">
+          Articles already read
+        </h2>
+      </div>
+    </div>
+  </div>
+  <!-- end / info about feeds -->
+  <!-- Modal feed article-->
+  <article class="modal" [ngClass]="{'is-active':isModalActive}">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title" *ngIf="feedItem"> {{feedItem.title}} </p>
+      </header>
+      <section class="modal-card-body">
+        <i [innerHTML]="feedItem.content | safeHtmlPipe"></i>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button" (click)="toggleModal('')">Cancel</button>
+      </footer>
+    </div>
+  </article>
+  <!-- end / Modal feed article-->
+</ng-container>

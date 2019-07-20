@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"); */
+@import "variables";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+body {
+  font-family: $font-lato;
+}
+
+.color {
+  border-style: dotted;
+}
+
+.color2 {
+  border-style: dotted;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.description {
+  display: flex;
+  overflow: hidden;
+  max-height: 30px;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+}
+
+/* .justify-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 80%;
+} */
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-justify-center {
+  justify-content: center;
+}

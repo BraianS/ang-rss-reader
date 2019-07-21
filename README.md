@@ -9,8 +9,8 @@ Is a simple Rss Reader.
 What things you need to install the software and how to install them.
 
 * [Install Node.js](https://nodejs.org/en/).
-* Install [Angular CLI: 7.3.9](https://www.npmjs.com/package/@angular/cli/v/7.3.9).
-  * Run `npm install -g @angular/cli` to install Globally or `npm install @angular/cli` to install locally. To install Install Specific Version (Example: 7.3.9) `npm install -g @angular/cli@7.3.9`.
+* Install [Angular CLI: 8.1.2](https://www.npmjs.com/package/@angular/cli/v/8.1.2).
+  * Run `npm install -g @angular/cli` to install Globally or `npm install @angular/cli` to install locally. To install Install Specific Version (Example: 8.1.2) `npm install -g @angular/cli@8.1.2`.
 * Clone this project repository.
 * Run `npm install` from project directory.
 * Run `ng s --open` to open the project automatically in the url `http://localhost:4200`
@@ -19,7 +19,7 @@ What things you need to install the software and how to install them.
 
 * Bulma
 * Font Awesome Free
-* Angular CLI: 7.3.9
+* Angular CLI: 8.1.2
 * Rss Parser
 
 ## Contributing

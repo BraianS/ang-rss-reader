@@ -109,7 +109,7 @@ export class FeedService {
         let obj = {
           "title": feedItem.title,
           "link": feedItem.link,
-          "author": feedItem.author,
+          "author": feedItem['dc:creator'] || feedItem.author,
           "categories": feedItem.categories,
           "pubDate": feedItem.pubDate,
           "content": content,

@@ -10,7 +10,7 @@ import { Feed } from '../model/Feed';
 @Injectable({
   providedIn: 'root'
 })
-export class FeedService {  
+export class FeedService {
 
   constructor(private http: HttpClient) {
     let feed: any = JSON.parse(localStorage.getItem("feeds")) || [];
@@ -62,12 +62,12 @@ export class FeedService {
   }
 
   getFeedList(url: string): Observable<any> {
-    return this.http.get(this.cors+url, { responseType: 'text' })
+    return this.http.get(this.cors + url, { responseType: 'text' })
       .pipe(
         map(this.extractFeedList),
         catchError(this.handlerError)
       )
-  }  
+  }
 
   handlerError(error: Response | any) {
     let errorMsg: string = "";
@@ -92,11 +92,36 @@ export class FeedService {
     const itemsArray = [];
     if (FeedItemList.length) {
       FeedItemList.forEach((feedItem: any) => {
-        itemsArray.push(new FeedItems(feedItem));
+        let content = feedItem['content:encoded'] || feedItem.content;
+
+        let htmlParser = new DOMParser();
+        let htmlDoc = htmlParser.parseFromString(content, "text/html");
+
+        /* Date from now more 30 days to expire */
+        let expiryDate = new Date(new Date().getTime() + (30 * 24 * 60 * 60 * 1000));
+
+        let thumbnail = "";
+        let img = htmlDoc.getElementsByTagName('img');
+        if (img.length) {
+          thumbnail = img[0].src;
+        }
+
+        let obj = {
+          "title": feedItem.title,
+          "link": feedItem.link,
+          "author": feedItem.author,
+          "categories": feedItem.categories,
+          "pubDate": feedItem.pubDate,
+          "content": content,
+          "expiryDate": expiryDate,
+          "thumbnail": thumbnail
+        }
+
+        itemsArray.push(new FeedItems(obj));
       });
     } else {
       return of([]);
     }
     return itemsArray;
-  } 
+  }
 }

@@ -24,6 +24,11 @@
     <div class="box" *ngIf="feedItemList.length">
       <!-- list of feed items -->
       <article class="media" *ngFor="let item of feedItemList">
+        <div class="media-left">
+            <figure class="image is-96x96">
+                <img src="{{item.thumbnail}}">
+              </figure>
+        </div>
         <div class="media-content">
           <div class="content">
             <p>
@@ -58,7 +63,7 @@
         <p><span class="icon">
             <i class="fas fa-save"></i>
           </span> Your feeds are saved locally.</p>
-          <p><span class="icon">
+        <p><span class="icon">
             <i class="fas fa-code-branch"></i>
           </span> <a href="https://github.com/BraianS/ang-feeds">Fork this project, you're welcome to help.</a></p>
       </div>

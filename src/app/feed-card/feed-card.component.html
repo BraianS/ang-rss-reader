@@ -21,27 +21,28 @@
         </div>
       </div>
     </nav>
-    <div class="box" *ngIf="feedItemList.length">
+    <div class="container" *ngIf="feedItemList.length">
       <!-- list of feed items -->
-      <article class="media" *ngFor="let item of feedItemList">
-        <div class="media-left">
+      <div class="box is-hover" *ngFor="let item of feedItemList" (click)="toggleModal(item)">
+        <article class="media">
+          <div class="media-left">
             <figure class="image is-96x96">
-                <img src="{{item.thumbnail}}">
-              </figure>
-        </div>
-        <div class="media-content">
-          <div class="content">
-            <p>
-              <strong>{{item.author}}</strong> <small> · {{item.pubDate | date:'dd-MM-yyyy'}}</small>
-              <br>
-              <strong>{{item.title}}</strong>
-              <br>
-              <br>
-              <a class="button is-link is-outlined" (click)="toggleModal(item)">Saiba mais</a>
-            </p>
+              <img src="{{item.thumbnail}}">
+            </figure>
           </div>
-        </div>
-      </article>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>{{item.author}}</strong> <small> · {{item.pubDate | date:'dd-MM-yyyy'}}</small>
+                <br>
+                <strong>{{item.title}}</strong>
+                <br>
+                <br>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
       <!-- end / list of feed items -->
     </div>
     <!-- remove all feed items -->

@@ -34,6 +34,11 @@ export class FeedCardComponent implements OnInit, OnChanges {
     this.feedItem = feedItem;
   }
 
+  closeModal(){
+    this.isModalActive = !this.isModalActive;
+    this.feedItem = [];
+  }
+
   getFeedItemsList() {
     this.isLoadingActive = true;
     const currentFeedList = this.feedService.getLocalFeedItems(this.childUrl);

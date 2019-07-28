@@ -1,6 +1,6 @@
-# Ang Feeds
+# Ang Rss Reader
 
-Is a simple Rss Reader.
+Is a simple Rss Reader. Welcome to [Ang Rss Reader ](https://braians.github.io/ang-rss-reader/).
 
 ![SS](src/assets/img/SS.png)
 

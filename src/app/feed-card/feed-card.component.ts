@@ -1,6 +1,7 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, ElementRef, Renderer2, Inject } from '@angular/core';
 import { FeedService } from '../shared/feed.service';
 import { FeedItems } from '../model/FeedItems';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'feed-card',
@@ -16,8 +17,11 @@ export class FeedCardComponent implements OnInit, OnChanges {
   isModalActive: boolean = false;
   isLoadingActive: boolean = false;
   isAboutActive: boolean = true;
+  isDarkTheme: boolean = false;
 
-  constructor(private feedService: FeedService) { }
+  constructor(private feedService: FeedService,
+    private _re: Renderer2,
+    @Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit() { }
 
@@ -34,7 +38,7 @@ export class FeedCardComponent implements OnInit, OnChanges {
     this.feedItem = feedItem;
   }
 
-  closeModal(){
+  closeModal() {
     this.isModalActive = !this.isModalActive;
     this.feedItem = [];
   }
@@ -95,5 +99,14 @@ export class FeedCardComponent implements OnInit, OnChanges {
     this.feedItemList = [];
     this.isModalActive = false;
     this.isLoadingActive = false;
+  }
+
+  changeTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+    if (this.isDarkTheme) {
+      this._re.setAttribute(this.document.documentElement, 'data-theme', 'dark');
+    } else {
+      this._re.removeAttribute(this.document.documentElement, 'data-theme');
+    }
   }
 }

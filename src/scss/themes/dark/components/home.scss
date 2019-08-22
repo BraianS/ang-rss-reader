@@ -1,0 +1,76 @@
+[data-theme="dark"] {
+  body {
+    background-color: $background-primary;
+  }
+
+  footer {
+    background-color: $background-secondary;
+  }
+
+  .title,
+  .subtitle,
+  .menu-label,
+  .container,
+  p {
+    color: $text-primary;
+  }
+
+  strong,
+  .content {
+    color: $text-secondary;
+  }
+
+  .input {
+    background-color: $background-primary;
+    color: $is-info;
+
+    &::placeholder {
+      color: $text-primary;
+    }
+  }
+
+  .menu-list {
+    .column {
+      color: $text-secondary;
+
+      &:hover {
+        background-color: #121314;
+        color: $text-secondary;
+      }
+    }
+
+    a:hover {
+      background-color: $background-secondary;
+      color: $text-secondary;
+    }
+  }
+
+  .button {
+    background-color: $background-primary;
+    color: $text-primary;
+  }
+
+  .is-active {
+    background-color: $is-info;
+    color: $text-secondary;
+  }
+
+  .is-primary {
+    background: $is-primary;
+    color: $text-primary;
+  }
+
+  .is-danger {
+    background-color: $is-danger;
+    color: $text-primary;
+  }
+
+  .is-info {
+    background-color: $is-info;
+  }
+
+  .is-light {
+    background-color: $background-secondary;
+    color: $is-info;
+  }
+}

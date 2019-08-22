@@ -1,0 +1,18 @@
+[data-theme="dark"] {
+  .modal-card-body {
+    background-color: $background-primary;
+  }
+
+  .modal-card-head {
+    background-color: $background-secondary;
+  }
+
+  .box {
+    background-color: $background-primary;
+  }
+
+  .slider:before {
+    background-color: $background-primary;
+    box-shadow: 0 0 1px $background-primary;
+  }
+}

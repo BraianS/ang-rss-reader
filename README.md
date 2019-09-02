@@ -22,6 +22,14 @@ What things you need to install the software and how to install them.
 * Angular CLI: 8.1.2
 * Rss Parser
 
+## Features
+
+* Dark Mode.
+* [Progressive Web App](https://developers.google.com/web/progressive-web-apps/).
+* You can install it on your desktop or mobile phone.
+* Feeds are store for 30 days.
+* When you update your feed list, items saved for 30 days will be deleted.
+
 ## Contributing
 
 1. Clone this repository.

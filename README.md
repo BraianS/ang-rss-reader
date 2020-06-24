@@ -9,18 +9,19 @@ Is a simple Rss Reader. Welcome to [Ang Rss Reader ](https://braians.github.io/a
 What things you need to install the software and how to install them.
 
 * [Install Node.js](https://nodejs.org/en/).
-* Install [Angular CLI: 8.1.2](https://www.npmjs.com/package/@angular/cli/v/8.1.2).
-  * Run `npm install -g @angular/cli` to install Globally or `npm install @angular/cli` to install locally. To install Install Specific Version (Example: 8.1.2) `npm install -g @angular/cli@8.1.2`.
+* Install [Angular CLI: 9.1.9](https://www.npmjs.com/package/@angular/cli/v/9.1.9).
+  * Run `npm install -g @angular/cli` to install Globally or `npm install @angular/cli` to install locally. To install Install Specific Version (Example: 9.1.9) `npm install -g @angular/cli@9.1.9`.
 * Clone this project repository.
 * Run `npm install` from project directory.
 * Run `ng s --open` to open the project automatically in the url `http://localhost:4200`
 
 ## Built With
 
-* Bulma
-* Font Awesome Free
-* Angular CLI: 8.1.2
-* Rss Parser
+* Bulma: 0.7.5
+* Font Awesome Free: 5.9.0
+* Angular CLI: 9.1.9
+* Angular: 9.1.11
+* Rss Parser: 3.7.2
 
 ## Features
 

@@ -47,6 +47,7 @@
             <!--  Title -->
             <div class="field is-fullwidth">
               <div class="control">
+                <label for="feed"></label>
                 <input type="text" id="feed" class="input" [class.is-danger]="title.invalid && title.touched"
                   placeholder="Title" [(ngModel)]="feed.title" name="title" required #title="ngModel" maxlength="40">
               </div>
@@ -61,6 +62,7 @@
                 <div class="field ">
                   <div class="field has-addons">
                     <div class="control is-expanded">
+                      <label for="url"></label>
                       <input type="text" id="url" class="input" [class.is-danger]="url.invalid && url.touched "
                         name="url" [(ngModel)]="feed.url" placeholder="http://rss.example.com/feed" #url="ngModel"
                         required maxlength="120">

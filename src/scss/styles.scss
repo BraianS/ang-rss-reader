@@ -14,31 +14,6 @@ body {
   font-family: $font-lato;
 }
 
-.color {
-  border-style: dotted;
-}
-
-.color2 {
-  border-style: dotted;
-  flex-direction: column;
-  align-content: flex-start;
-}
-
-.description {
-  display: flex;
-  overflow: hidden;
-  max-height: 30px;
-  word-wrap: break-word;
-  flex-wrap: wrap;
-}
-
-/* .justify-content {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 80%;
-} */
-
 .icon {
   display: flex;
   justify-content: center;

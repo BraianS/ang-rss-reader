@@ -3,26 +3,9 @@
     background-color: $background-primary;
   }
 
-  footer {
-    background-color: $background-secondary;
-  }
-
-  .title,
-  .subtitle,
-  .menu-label,
-  .container,
-  p {
-    color: $text-primary;
-  }
-
-  strong,
-  .content {
-    color: $text-secondary;
-  }
-
   .input {
     background-color: $background-primary;
-    color: $is-info;
+    color: $is-link;
 
     &::placeholder {
       color: $text-primary;
@@ -51,7 +34,7 @@
   }
 
   .is-active {
-    background-color: $is-info;
+    background-color: $is-link;
     color: $text-secondary;
   }
 
@@ -60,17 +43,18 @@
     color: $text-primary;
   }
 
+  .is-link {
+    background: $is-link;
+    color: $text-primary;
+  }
+
   .is-danger {
     background-color: $is-danger;
     color: $text-primary;
   }
 
-  .is-info {
-    background-color: $is-info;
-  }
-
   .is-light {
     background-color: $background-secondary;
-    color: $is-info;
+    color: is-link;
   }
 }

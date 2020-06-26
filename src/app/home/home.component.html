@@ -1,14 +1,14 @@
 <!-- Hero -->
-<section class="hero is-info">
-  <div class="hero-body">
+<section class="hero is-link">
+  <div class="hero__body">
     <div class="container is-flex is-justify-center">
       <div class="columns">
         <div class="column is-flex is-justify-center">
           <img src="assets/img/logo.png" alt="" class="image is-128x128">
         </div>
-        <div class="column ">
-          <h1 class="title is-2 has-text-centered">Ang Rss Reader</h1>
-          <h3 class="subtitle is-4 has-text-centered">Simple Rss Reader</h3>
+        <div class="column">
+          <h2 class="title is-2 has-text-centered">Ang Rss Reader</h2>
+          <h3 class="subtitle is-3 has-text-centered">Simple Rss Reader</h3>
         </div>
       </div>
     </div>
@@ -21,10 +21,10 @@
     <div class="columns">
       <aside class="column is-6">
         <nav class="menu">
-          <p class="menu-label">Feeds</p>
+          <p class="subtitle is-5">Feeds</p>
           <!-- list of Feeds -->
           <div class="menu-list">
-            <div class="columns is-mobile " *ngFor="let feed of feedList">
+            <div class="columns menu-list__column is-mobile margin-left" *ngFor="let feed of feedList">
               <a class="column is-11 " (click)="getUrlFeed(feed.url)" [ngClass]="{'is-active': urlParent === feed.url}">
                 {{feed.title}} </a>
               <a class="column is-1" (click)="removeFeed(feed)" [ngClass]="{'has-text-danger': urlParent === feed.url}">
@@ -35,7 +35,7 @@
             </div>
           </div>
           <!-- end / list of Feeds -->
-          <p class="menu-label">Add New Feed</p>
+          <p class="subtitle is-5 margin-bottom">Add New Feed below</p>
           <ul class="menu-list">
             <li><a (click)="toggleForm()">
                 <span [hidden]="isFormActive">Open Form</span>
@@ -68,7 +68,7 @@
                         required maxlength="120">
                     </div>
                     <div class="control">
-                      <button class="button is-info" [disabled]="form.invalid" type="submit">Add</button>
+                      <button class="button is-link" [disabled]="form.invalid" type="submit">Add</button>
                     </div>
                   </div>
                   <div *ngIf="url.invalid && url.touched" class="is-size-6 has-text-danger">
@@ -92,7 +92,8 @@
 </section>
 <footer class="footer">
   <div class="content has-text-centered">
-    <p><strong>Ang Rss Reader</strong> by <a href="https://github.com/BraianS/ang-rss-reader"> Braian Silva</a>. The
-      source code is licensed <a href="https://opensource.org/licenses/mit-license.php">MIT</a>
+    <p><strong>Ang Rss Reader</strong> by
+      <a class="footer__link" href="https://github.com/BraianS/ang-rss-reader"> Braian Silva</a>.
+      The source code is licensed <a class="footer__link" href="https://opensource.org/licenses/mit-license.php">MIT</a>
     </p>
   </div>

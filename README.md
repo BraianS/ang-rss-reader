@@ -2,7 +2,7 @@
 
 Is a simple Rss Reader. Welcome to [Ang Rss Reader ](https://braians.github.io/ang-rss-reader/).
 
-![SS](src/assets/img/SS.png)
+![ang-rss-reader](assets/ang-rss-reader.png)
 
 ## Prerequisites
 

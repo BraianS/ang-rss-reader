@@ -2,17 +2,12 @@
 /* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"); */
 @import "variables";
 @import "themes/dark/dark-variables";
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "themes/dark/components/home.scss";
 @import "themes/dark/components/feed-card.scss";
-
-body {
-  font-family: $font-lato;
-}
 
 .icon {
   display: flex;

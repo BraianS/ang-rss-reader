@@ -1,6 +1,29 @@
 [data-theme="dark"] {
+  background-color: $background-primary;
+
   body {
     background-color: $background-primary;
+  }
+
+  p,
+  span {
+    color: $text-primary;
+  }
+
+  strong {
+    color: $text-secondary;
+  }
+
+  a {
+    color: $text-secondary;
+  }
+
+  a[href] {
+    color: #3676b2;
+  }
+
+  .footer {
+    background-color: $background-secondary;
   }
 
   .input {
@@ -17,7 +40,7 @@
       color: $text-secondary;
 
       &:hover {
-        background-color: #121314;
+        background-color: $background-hover;
         color: $text-secondary;
       }
     }

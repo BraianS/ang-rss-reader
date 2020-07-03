@@ -28,8 +28,7 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/scss/styles.scss",
-              "node_modules/bulma/css/bulma.css"
+              "src/scss/styles.scss"
             ],
             "scripts": [],
             "es5BrowserSupport": true

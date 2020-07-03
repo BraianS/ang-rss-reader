@@ -1,13 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
-/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"); */
 @import "variables";
-@import "themes/dark/dark-variables";
+@import "themes/dark/index.scss";
+@import "~bulma/css/bulma.css";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 @import "~@fortawesome/fontawesome-free/scss/solid";
-@import "themes/dark/components/home.scss";
-@import "themes/dark/components/feed-card.scss";
 
 .icon {
   display: flex;

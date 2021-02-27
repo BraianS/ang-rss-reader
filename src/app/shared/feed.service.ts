@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map, catchError } from 'rxjs/operators';
-import { Observable, of, throwError } from 'rxjs';
-
-import { FeedItems } from '../model/FeedItems';
+import { Injectable } from '@angular/core';
 import Parser from 'rss-parser';
+import { Observable, of, throwError } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 import { Feed } from '../model/Feed';
+import { FeedItems } from '../model/FeedItems';
+
 
 @Injectable({
   providedIn: 'root'
@@ -24,7 +24,7 @@ export class FeedService {
     }
   }
 
-  private cors: string = "https://cors-anywhere.herokuapp.com/";
+  private cors: string = "https://cors.bridged.cc/";
 
   feed: Feed[] = [];
   feedItemList: FeedItems[] = [];

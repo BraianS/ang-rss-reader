@@ -33,7 +33,7 @@
     {
       "name": "cors",
       "urls": [
-        "https://cors-anywhere.herokuapp.com/"
+        "https://cors.bridged.cc/"
       ],
       "cacheConfig": {
         "maxSize": 5,

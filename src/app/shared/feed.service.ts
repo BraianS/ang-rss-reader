@@ -24,7 +24,7 @@ export class FeedService {
     }
   }
 
-  private cors: string = "https://cors.bridged.cc/";
+  private cors: string = `https://cors.bridged.cc/`;
 
   feed: Feed[] = [];
   feedItemList: FeedItems[] = [];

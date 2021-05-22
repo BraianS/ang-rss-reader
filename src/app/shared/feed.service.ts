@@ -17,8 +17,8 @@ export class FeedService {
 
     if (feed.length === 0) {
       this.feed = [{
-        title: 'Vagas de emprego sorocaba',
-        url: 'http://parceriasocialdeempregos.com.br/feed/'
+        title: 'G1 Brasil',
+        url: 'http://g1.globo.com/dynamo/brasil/rss2.xml'
       }];
       localStorage.setItem("feeds", JSON.stringify(this.feed));
     }

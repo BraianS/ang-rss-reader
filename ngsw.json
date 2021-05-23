@@ -1,0 +1,130 @@
+{
+  "configVersion": 1,
+  "timestamp": 1621735529728,
+  "index": "https://braians.github.io/ang-rss-reader/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://braians.github.io/ang-rss-reader/favicon.ico",
+        "https://braians.github.io/ang-rss-reader/index.html",
+        "https://braians.github.io/ang-rss-reader/main.9375e9e6509983ea913f.js",
+        "https://braians.github.io/ang-rss-reader/polyfills-es5.7b5dd6b5057b19a69898.js",
+        "https://braians.github.io/ang-rss-reader/polyfills.fa9b69c3d89a047e9c10.js",
+        "https://braians.github.io/ang-rss-reader/runtime.7b63b9fd40098a2e8207.js",
+        "https://braians.github.io/ang-rss-reader/styles.c7af6a21a96d2d1047c9.css"
+      ],
+      "patterns": [
+        "https:\\/\\/braians\\.github\\.io\\/ang-rss-reader\\/"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://braians.github.io/ang-rss-reader/assets/icons/icon-128x128.png",
+        "https://braians.github.io/ang-rss-reader/assets/icons/icon-144x144.png",
+        "https://braians.github.io/ang-rss-reader/assets/icons/icon-152x152.png",
+        "https://braians.github.io/ang-rss-reader/assets/icons/icon-192x192.png",
+        "https://braians.github.io/ang-rss-reader/assets/icons/icon-384x384.png",
+        "https://braians.github.io/ang-rss-reader/assets/icons/icon-512x512.png",
+        "https://braians.github.io/ang-rss-reader/assets/icons/icon-72x72.png",
+        "https://braians.github.io/ang-rss-reader/assets/icons/icon-96x96.png",
+        "https://braians.github.io/ang-rss-reader/assets/img/logo.png",
+        "https://braians.github.io/ang-rss-reader/fa-brands-400.70150a2b3a50f84aff70.ttf",
+        "https://braians.github.io/ang-rss-reader/fa-brands-400.83494ca2906755eeae18.svg",
+        "https://braians.github.io/ang-rss-reader/fa-brands-400.85917bf21118aa3f2e14.eot",
+        "https://braians.github.io/ang-rss-reader/fa-brands-400.cac133c03011645ba509.woff",
+        "https://braians.github.io/ang-rss-reader/fa-brands-400.dd7467859e54d3b9dae6.woff2",
+        "https://braians.github.io/ang-rss-reader/fa-regular-400.024286359541b224631b.svg",
+        "https://braians.github.io/ang-rss-reader/fa-regular-400.6810be1da91e3f344935.eot",
+        "https://braians.github.io/ang-rss-reader/fa-regular-400.8a7914c9eb0f44af5d33.woff",
+        "https://braians.github.io/ang-rss-reader/fa-regular-400.a3b4cd30799e10f5fbc2.ttf",
+        "https://braians.github.io/ang-rss-reader/fa-regular-400.a3f7358b4bd2b708c04d.woff2",
+        "https://braians.github.io/ang-rss-reader/fa-solid-900.2f6dbd9f998fa1413ff7.eot",
+        "https://braians.github.io/ang-rss-reader/fa-solid-900.9b4d14a5508e9cc4ca88.ttf",
+        "https://braians.github.io/ang-rss-reader/fa-solid-900.acc6b6bf6c3214aeb3ef.woff2",
+        "https://braians.github.io/ang-rss-reader/fa-solid-900.c8a5f7410ef2a4d63988.svg",
+        "https://braians.github.io/ang-rss-reader/fa-solid-900.e4efd599b7afce2f7b21.woff"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "cors",
+      "patterns": [
+        "https:\\/\\/cors\\.bridged\\.cc\\/"
+      ],
+      "strategy": "freshness",
+      "maxSize": 5,
+      "maxAge": 18000000,
+      "timeoutMs": 10000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "https://braians.github.io/ang-rss-reader/assets/icons/icon-128x128.png": "dba8709e8ed99ea848bebb163ad9040227a0947b",
+    "https://braians.github.io/ang-rss-reader/assets/icons/icon-144x144.png": "53155b8c151244bf094b79434852d2c41688223f",
+    "https://braians.github.io/ang-rss-reader/assets/icons/icon-152x152.png": "9110f35a3f4954f2199d4b7edb7af126456a7cec",
+    "https://braians.github.io/ang-rss-reader/assets/icons/icon-192x192.png": "1204782f808ff384eb2b09f275efed9aec11adea",
+    "https://braians.github.io/ang-rss-reader/assets/icons/icon-384x384.png": "03d99ab31397d9a25a8e4b7315c93810fb48e145",
+    "https://braians.github.io/ang-rss-reader/assets/icons/icon-512x512.png": "ffc57e8b77b23c026bff13c369678575a2b700a2",
+    "https://braians.github.io/ang-rss-reader/assets/icons/icon-72x72.png": "1874b59d2f24e71faee8545f768e32b12a5c38aa",
+    "https://braians.github.io/ang-rss-reader/assets/icons/icon-96x96.png": "bd9d0175bba83c3759bc64fd229fad478357215a",
+    "https://braians.github.io/ang-rss-reader/assets/img/logo.png": "5821f0214238127456ee6fa31afb95a77e467ded",
+    "https://braians.github.io/ang-rss-reader/fa-brands-400.70150a2b3a50f84aff70.ttf": "07d3f17fa86ddf58c8442ec3bacbcee90fe42bdc",
+    "https://braians.github.io/ang-rss-reader/fa-brands-400.83494ca2906755eeae18.svg": "d219cda076ad129bb27cd994286db8ff8169e337",
+    "https://braians.github.io/ang-rss-reader/fa-brands-400.85917bf21118aa3f2e14.eot": "cad3317342dbe39e333569633f1c103e1d138722",
+    "https://braians.github.io/ang-rss-reader/fa-brands-400.cac133c03011645ba509.woff": "4cb087035ebd3afa0c588f129d1549e532c06d18",
+    "https://braians.github.io/ang-rss-reader/fa-brands-400.dd7467859e54d3b9dae6.woff2": "a403af3337e6207d144b998b9c3bed439af562a9",
+    "https://braians.github.io/ang-rss-reader/fa-regular-400.024286359541b224631b.svg": "73907af4519cd8b1c7f31a376349c8cedd145cc6",
+    "https://braians.github.io/ang-rss-reader/fa-regular-400.6810be1da91e3f344935.eot": "38b05dab032a14ed904c36877795be97417cb3cf",
+    "https://braians.github.io/ang-rss-reader/fa-regular-400.8a7914c9eb0f44af5d33.woff": "82875b3e31f4a2a8b9ed4e4b383e61ce3737267f",
+    "https://braians.github.io/ang-rss-reader/fa-regular-400.a3b4cd30799e10f5fbc2.ttf": "2833f486c98034276a8cf663f639bd985f360bd0",
+    "https://braians.github.io/ang-rss-reader/fa-regular-400.a3f7358b4bd2b708c04d.woff2": "c744217caa82b3245cffa2714aaf2ec9f749614d",
+    "https://braians.github.io/ang-rss-reader/fa-solid-900.2f6dbd9f998fa1413ff7.eot": "acee4f1e361ccf995121f381b95424b6ec6b29c0",
+    "https://braians.github.io/ang-rss-reader/fa-solid-900.9b4d14a5508e9cc4ca88.ttf": "b7f728ec591ed9dd9028ed3deb6a536d0038c8d6",
+    "https://braians.github.io/ang-rss-reader/fa-solid-900.acc6b6bf6c3214aeb3ef.woff2": "07bed153d47f9129a944ee54dd72952deed074c8",
+    "https://braians.github.io/ang-rss-reader/fa-solid-900.c8a5f7410ef2a4d63988.svg": "add1af0ce6d10a103c434b4edaa6c07acaaea3bc",
+    "https://braians.github.io/ang-rss-reader/fa-solid-900.e4efd599b7afce2f7b21.woff": "0f6fcbf47ded1a1c6ace0f67383d512b6a053dad",
+    "https://braians.github.io/ang-rss-reader/favicon.ico": "6c1f9c4415a62e2851f312a5d3fababfc4ded5e1",
+    "https://braians.github.io/ang-rss-reader/index.html": "6b6d2af6b04654ab4b7b8cf9a937c317a660c651",
+    "https://braians.github.io/ang-rss-reader/main.9375e9e6509983ea913f.js": "65127d70a40fe0a18d9a3bd1302f3acb968ab210",
+    "https://braians.github.io/ang-rss-reader/polyfills-es5.7b5dd6b5057b19a69898.js": "c78ae4538ce129d0ffeb086734ddc9e19ed12c92",
+    "https://braians.github.io/ang-rss-reader/polyfills.fa9b69c3d89a047e9c10.js": "70a959254d69579220c468c9ac3533a9ca431fc2",
+    "https://braians.github.io/ang-rss-reader/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://braians.github.io/ang-rss-reader/styles.c7af6a21a96d2d1047c9.css": "c3f0217e3f2b662a509b1ac1563b7e510f9f938e"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

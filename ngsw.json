@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1695323046646,
+  "timestamp": 1706615781613,
   "index": "https://braians.github.io/ang-rss-reader/index.html",
   "assetGroups": [
     {
@@ -13,10 +13,10 @@
       "urls": [
         "https://braians.github.io/ang-rss-reader/favicon.ico",
         "https://braians.github.io/ang-rss-reader/index.html",
-        "https://braians.github.io/ang-rss-reader/main.2965355ee6c69156.js",
-        "https://braians.github.io/ang-rss-reader/polyfills.c8bbb0981c475370.js",
-        "https://braians.github.io/ang-rss-reader/runtime.8d3b10e532218927.js",
-        "https://braians.github.io/ang-rss-reader/styles.f28e89bf439d5a54.css"
+        "https://braians.github.io/ang-rss-reader/main.9bc719cf568b9e65.js",
+        "https://braians.github.io/ang-rss-reader/polyfills.a8eca281cc1d39be.js",
+        "https://braians.github.io/ang-rss-reader/runtime.44ecc736f7f64ece.js",
+        "https://braians.github.io/ang-rss-reader/styles.fcae251625f33ca3.css"
       ],
       "patterns": [
         "https:\\/\\/braians\\.github\\.io\\/ang-rss-reader\\/"
@@ -100,11 +100,11 @@
     "https://braians.github.io/ang-rss-reader/fa-solid-900.91c80f256c9c6e95.woff2": "07bed153d47f9129a944ee54dd72952deed074c8",
     "https://braians.github.io/ang-rss-reader/fa-solid-900.93de309faaf03dc9.woff": "0f6fcbf47ded1a1c6ace0f67383d512b6a053dad",
     "https://braians.github.io/ang-rss-reader/favicon.ico": "6c1f9c4415a62e2851f312a5d3fababfc4ded5e1",
-    "https://braians.github.io/ang-rss-reader/index.html": "1a809ce8ef7692a6ab18d950fc5119cee0080e32",
-    "https://braians.github.io/ang-rss-reader/main.2965355ee6c69156.js": "544be5ac5c10ef5fa7cd945d6e59db2b65336df0",
-    "https://braians.github.io/ang-rss-reader/polyfills.c8bbb0981c475370.js": "928f181c984561269347ab45712e8f3973024095",
-    "https://braians.github.io/ang-rss-reader/runtime.8d3b10e532218927.js": "21caca637f6a07c440d95af41bf52f3b1bef116e",
-    "https://braians.github.io/ang-rss-reader/styles.f28e89bf439d5a54.css": "472da7086eaeaf066a47bcaf5fde066b7d9c1fcd"
+    "https://braians.github.io/ang-rss-reader/index.html": "bdf1be4cec5b40609b8f4b0719138b5555fdd7ce",
+    "https://braians.github.io/ang-rss-reader/main.9bc719cf568b9e65.js": "48f75b1545bec60cd72ad62ba1ed2755d5660172",
+    "https://braians.github.io/ang-rss-reader/polyfills.a8eca281cc1d39be.js": "a908499790ffb32577354e65a8222bbe2a399878",
+    "https://braians.github.io/ang-rss-reader/runtime.44ecc736f7f64ece.js": "1ca2aa9c76f5b04039348dd36fbfa3704a4a4876",
+    "https://braians.github.io/ang-rss-reader/styles.fcae251625f33ca3.css": "74952cbbaec96062d0adc20716470b0671bae28c"
   },
   "navigationUrls": [
     {
